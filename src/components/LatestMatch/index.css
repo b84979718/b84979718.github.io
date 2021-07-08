@@ -1,0 +1,98 @@
+/* Write your CSS here */
+
+.latest-match-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0f172a;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.opponent-team-name {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.date {
+  font-size: 25px;
+}
+
+.opponent-team-logo {
+  width: 300px;
+  height: 280px;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  align-items: center;
+}
+
+.latest-first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.latest-second-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.venue {
+  font-size: 15px;
+}
+
+.second-heading {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.second-description {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .latest-match-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .opponent-team-name {
+    font-size: 20px;
+    text-align: left;
+  }
+  .date {
+    font-size: 16px;
+  }
+  .opponent-team-logo {
+    width: 100px;
+    height: 80px;
+  }
+  .first {
+    width: 100%;
+    border-bottom: 1px solid #475569;
+    align-items: center;
+  }
+
+  .latest-second-section {
+    align-items: flex-start;
+  }
+  .venue {
+    font-size: 12px;
+    text-align: left;
+  }
+  .second-heading {
+    font-size: 15px;
+  }
+  .second-description {
+    font-size: 12px;
+  }
+}
